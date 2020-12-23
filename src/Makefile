@@ -29,6 +29,7 @@ CFLAGS += -I../include -D__MENUET_CURSES__ -UDOS -I../INCLUDE_MENUET/include -DN
 
 default: $(OBJECTS) Makefile
 	ar rcs libmcurses.a $(OBJECTS)
+	mkdir ../lib
 	mv libmcurses.a ../lib
 
 %.o : %.c Makefile
