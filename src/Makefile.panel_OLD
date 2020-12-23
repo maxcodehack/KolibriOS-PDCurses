@@ -1,0 +1,5 @@
+CFLAGS = -I../include -D__MENUET_CURSES__ -UDOS
+OUTFILE = ../lib/libpanel.a
+OBJS = panel/panel.o
+
+include /menuetos/makefiles/Makefile_for_lib
